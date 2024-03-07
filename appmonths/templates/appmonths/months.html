@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Months Page</title>
+    <style>
+        table{
+            background-color: #80f0d2;
+        }
+        a{
+            text-decoration: none;
+            color: #e89c0e;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th scope="col">Months</th>
+            </tr>
+        </thead>
+        {% for key in keys %}
+        <tbody>
+            <tr>
+                <th scope="row"><a href="{{ key }}">{{ key }}</a></th>
+            </tr>
+        </tbody>
+        {% endfor %}
+    </table>
+    {% for key in keys %}
+        <li><a href="{{ key }}">{{key}}</a></li>
+    {% endfor %}
+</body>
+</html>
