@@ -1,0 +1,12 @@
+ html{
+     margin: 50px;
+ }
+ body{
+     color: #ffffff;
+     background-color: #3c076e;
+     font-size: 80px;
+     text-align: center;
+ }
+ h1{
+     color: red;
+ }
